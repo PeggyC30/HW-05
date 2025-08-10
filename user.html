@@ -6,51 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <title>index</title>
-    <script type="module" crossorigin src="/HW-05/assets/main-CGxrn4OU.js"></script>
-    <link rel="stylesheet" crossorigin href="/HW-05/assets/main-CV91p24Z.css">
+    <script type="module" crossorigin src="/HW-05/assets/main-Bi_ddANS.js"></script>
+    <link rel="stylesheet" crossorigin href="/HW-05/assets/main-DtWiOOdx.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
   <div class="container">
     <a class="navbar-brand" href="#"><img src="/HW-05/assets/logo-CRTeTChE.svg" alt="logo" /></a>
+    <a href="user.html" class="ms-auto d-lg-none me-3"
+      ><img src="/HW-05/assets/avatar-QGHQ479s.png" alt="user-image" class="rounded-circle border me-2 user-image" />Mokumaru</a
+    >
     <button
-      class="navbar-toggler"
+      class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
+      data-bs-target="#navbarNav-header"
+      aria-controls="navbarNav-header"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link px-4" aria-current="page" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link px-4" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-4" href="#">聯絡我們</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNav-header">
+      <div class="fullscreen-nav d-lg-flex w-100">
+        <button
+          type="button"
+          class="btn-close ms-auto d-lg-none"
+          aria-label="Close"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav-header"
+        ></button>
+        <ul class="navbar-nav mx-auto mb-lg-0 text-center gap-5 gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於職旅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">聯絡我們</a>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          class="btn btn-secondary mx-auto mt-auto d-lg-none w-100 fs-20 fw-bold text-center d-block"
+        >
+          登入/註冊
+        </button>
+      </div>
     </div>
-    <a href="user.html"
+    <a href="user.html" class="ms-auto d-none d-lg-block"
       ><img src="/HW-05/assets/avatar-QGHQ479s.png" alt="user-image" class="rounded-circle border me-2 user-image" />Mokumaru</a
     >
   </div>
 </nav>
-
-    <main class="bg-gray">
-      <div class="container section-padding">
+    <main class="bg-natural-95">
+      <div class="container-lg py-7">
         <div class="row justify-content-center">
-          <div class="col-10">
-            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+          <div class="col-lg-10">
+            <ul class="nav nav-pills justify-content-center mb-5 gap-4 gap-md-5" id="pills-tab" role="tablist">
               <li class="nav-item me-4" role="presentation">
                 <button
-                  class="nav-link active"
+                  class="nav-link border tab-btn-bg active"
                   id="pills-info-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-info"
@@ -64,7 +82,7 @@
               </li>
               <li class="nav-item me-4" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link border tab-btn-bg"
                   id="pills-record-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-record"
@@ -78,7 +96,7 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link border tab-btn-bg"
                   id="pills-plan-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-plan"
@@ -91,7 +109,7 @@
                 </button>
               </li>
             </ul>
-            <div class="tab-content p-5 shadow round-panel" id="pills-tabContent">
+            <div class="tab-content p-6 shadow bg-white rounded-3" id="pills-tabContent">
               <!-- 個人資料 -->
               <div
                 class="tab-pane fade show active"
@@ -101,7 +119,7 @@
                 tabindex="0"
               >
                 <form action="">
-                  <div class="d-flex gap-4 mb-5">
+                  <div class="d-lg-flex gap-4 mb-5">
                     <!-- 左方區塊 -->
                     <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">個人資料</h2>
@@ -117,14 +135,7 @@
                       </div>
                       <div class="mb-4">
                         <div class="form-floating mb-3">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="姓名"
-                            value="Mokumaru"
-                            readonly
-                          />
+                          <input type="text" class="form-control" id="name" placeholder="姓名" value="Mokumaru" />
                           <label for="name">姓名</label>
                         </div>
                       </div>
@@ -166,7 +177,6 @@
                             id="birthdate"
                             placeholder="生日"
                             value="2000-01-10"
-                            readonly
                           />
                           <label for="birthdate">生日</label>
                         </div>
@@ -232,11 +242,10 @@
                             placeholder="信箱"
                             value="mokumaru@mail.com"
                             aria-describedby="emailHelp"
-                            readonly
                           />
                           <label for="email">信箱</label>
                         </div>
-                        <div id="emailHelp" class="form-text px-2">
+                        <div id="emailHelp" class="text-natural-50 px-2">
                           盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
                         </div>
                       </div>
@@ -248,7 +257,6 @@
                             id="phone"
                             placeholder="連絡電話"
                             value="09-1234-5678"
-                            readonly
                           />
                           <label for="phone">連絡電話</label>
                         </div>
@@ -261,7 +269,6 @@
                             id="address"
                             placeholder="地址"
                             value="高雄市三民區九如一路 87 號"
-                            readonly
                           />
                           <label for="address">地址</label>
                         </div>
@@ -269,11 +276,11 @@
                     </div>
                   </div>
                 </form>
-                <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-outline-dark border me-4">
+                <div class="d-flex justify-content-lg-center flex-column flex-lg-row flex-column-reverse gap-4">
+                  <button type="button" class="btn btn-white border d-flex justify-content-center">
                     重新填寫<span class="material-icons-outlined align-bottom ms-1"> chevron_right </span>
                   </button>
-                  <button type="button" class="btn btn-dark">
+                  <button type="button" class="btn btn-dark d-flex justify-content-center">
                     儲存更新<span class="material-icons-outlined align-bottom ms-1"> chevron_right </span>
                   </button>
                 </div>
@@ -288,31 +295,44 @@
               >
                 <h2 class="fs-4 mb-4">預約紀錄</h2>
                 <div class="d-flex gap-4 mb-5">
-                  <div class="card w-100">
+                  <div class="card w-100 d-none d-md-block">
                     <div class="card-body text-center py-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-blue">3</h3>
-                      <p class="subtitle">已完成諮詢</p>
+                      <h3 class="fs-3 fs-md-2 fw-bold mb-2 text-primary">3</h3>
+                      <p class="fs-6 fs-md-5 text-natural-50">已完成諮詢</p>
                     </div>
                   </div>
                   <div class="card w-100">
                     <div class="card-body text-center py-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-blue">2025/10/10</h3>
-                      <p class="subtitle">即將到來</p>
+                      <h3 class="fs-3 fs-md-2 fw-bold mb-2 text-primary text-nowrap">2025/10/10</h3>
+                      <p class="fs-6 fs-md-5 text-natural-50">即將到來</p>
                     </div>
                   </div>
-                  <div class="card w-100">
+                  <div class="card w-100 d-none d-md-block">
                     <div class="card-body text-center py-4">
-                      <h3 class="fs-5 fw-bold mb-2 text-blue">3/6</h3>
-                      <p class="subtitle">使用方案進度</p>
+                      <h3 class="fs-3 fs-md-2 fw-bold mb-2 text-primary">3/6</h3>
+                      <p class="fs-6 fs-md-5 text-natural-50">使用方案進度</p>
                     </div>
                   </div>
                 </div>
                 <div class="d-flex mb-4">
-                  <button type="button" class="btn btn-dark me-2">全部預約</button
-                  ><button type="button" class="btn btn-outline-dark border me-2">已完成</button
-                  ><button type="button" class="btn btn-outline-dark border">已取消</button>
+                  <button type="button" class="btn btn-dark me-2 px-3 px-md-4">全部預約</button
+                  ><button type="button" class="btn btn-white border me-2 px-3 px-md-4">已完成</button
+                  ><button type="button" class="btn btn-white border px-3 px-md-4">已取消</button>
                   <div class="dropdown ms-auto">
-                    <button class="btn border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button
+                      class="btn btn-white d-md-none p-3"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="material-icons-outlined align-bottom"> filter_list </span>
+                    </button>
+                    <button
+                      class="btn btn-white border d-none d-md-block"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
                       排序<span class="material-icons-outlined align-bottom ms-1"> filter_list </span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -324,64 +344,136 @@
                 <table class="table table-striped table-hover">
                   <thead>
                     <tr>
-                      <th scope="col">諮詢方案</th>
-                      <th scope="col">預約日期</th>
-                      <th scope="col">諮詢時長</th>
-                      <th scope="col">諮詢方式</th>
-                      <th scope="col">上課狀態</th>
+                      <th scope="col" class="d-table-cell d-md-none d-block w-100">預約紀錄一覽</th>
+                      <th scope="col" class="d-table-cell d-md-none d-block w-100"></th>
+                      <th scope="col" class="d-table-cell d-md-none d-block w-100"></th>
+                      <th scope="col" class="d-table-cell d-md-none d-block w-100"></th>
+                      <th scope="col" class="d-table-cell d-md-none d-block w-100"></th>
+
+                      <th scope="col" class="d-none d-md-table-cell">諮詢方案</th>
+                      <th scope="col" class="d-none d-md-table-cell">預約日期</th>
+                      <th scope="col" class="d-none d-md-table-cell">諮詢時長</th>
+                      <th scope="col" class="d-none d-md-table-cell">諮詢方式</th>
+                      <th scope="col" class="d-none d-md-table-cell">上課狀態</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="d-md-table-row-group">
                     <tr>
                       <td>職涯定位-職涯探索包 | 6/6堂</td>
                       <td>2025/11/11</td>
                       <td>@60分鐘</td>
-                      <td><span class="badge rounded-pill text-secondary border">視訊</span></td>
+                      <td><span class="badge bg-white rounded-pill border">視訊</span></td>
                       <td>等待上課</td>
                     </tr>
                     <tr>
                       <td>職涯定位-職涯探索包 | 5/6堂</td>
                       <td>2025/10/10</td>
                       <td>@60分鐘</td>
-                      <td><span class="badge rounded-pill text-secondary border">視訊</span></td>
+                      <td><span class="badge bg-white rounded-pill border">視訊</span></td>
                       <td>等待上課</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">職涯定位-職涯探索包 | 4/6堂</td>
-                      <td class="text-secondary">2025/09/09</td>
-                      <td class="text-secondary">@60分鐘</td>
-                      <td class="text-secondary"><span class="badge rounded-pill text-secondary border">視訊</span></td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">職涯定位-職涯探索包 | 4/6堂</td>
+                      <td class="text-natural-60">2025/09/09</td>
+                      <td class="text-natural-60">@60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">職涯定位-職涯探索包 | 3/6堂</td>
-                      <td class="text-secondary">2025/08/08</td>
-                      <td class="text-secondary">@60分鐘</td>
-                      <td class="text-secondary">
-                        <span class="badge rounded-pill text-secondary border">面對面</span>
+                      <td class="text-natural-60">職涯定位-職涯探索包 | 3/6堂</td>
+                      <td class="text-natural-60">2025/08/08</td>
+                      <td class="text-natural-60">@60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge bg-white rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">職涯定位-職涯探索包 | 2/6堂</td>
-                      <td class="text-secondary">2025/07/07</td>
-                      <td class="text-secondary">@60分鐘</td>
-                      <td class="text-secondary">
-                        <span class="badge rounded-pill text-secondary border">面對面</span>
+                      <td class="text-natural-60">職涯定位-職涯探索包 | 2/6堂</td>
+                      <td class="text-natural-60">2025/07/07</td>
+                      <td class="text-natural-60">@60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge bg-white rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                     <tr>
-                      <td class="text-secondary">職涯定位-職涯探索包 | 1/6堂</td>
-                      <td class="text-secondary">2025/06/06</td>
-                      <td class="text-secondary">@60分鐘</td>
-                      <td class="text-secondary">
-                        <span class="badge rounded-pill text-secondary border">面對面</span>
+                      <td class="text-natural-60">職涯定位-職涯探索包 | 1/6堂</td>
+                      <td class="text-natural-60">2025/06/06</td>
+                      <td class="text-natural-60">@60分鐘</td>
+                      <td class="text-natural-60">
+                        <span class="badge bg-white rounded-pill border">面對面</span>
                       </td>
-                      <td class="text-secondary">已完成</td>
+                      <td class="text-natural-60">已完成</td>
                     </tr>
                   </tbody>
                 </table>
+                <div>
+                  <ul class="list-unstyled booking-form">
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between">
+                        <h4 class="fs-6">職涯定位-職涯探索包 | 6/6堂</h4>
+                        <span class="badge bg-white rounded-pill border">視訊</span>
+                      </div>
+                      <div class="fs-7 text-natural-50">
+                        <span class="me-4">時間：2025/11/11</span><span>時長：60分鐘</span>
+                      </div>
+                      <div class="fs-7 text-natural-50"><span>等待上課</span></div>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <!-- 職旅計畫 -->
               <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plsn-tab" tabindex="0">
@@ -390,7 +482,7 @@
                     <!-- 左方區塊 -->
                     <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">職旅計劃概況</h2>
-                      <p class="text-secondary me-1">
+                      <p class="text-natural-50 me-1">
                         欄位皆為 <span class="badge rounded-pill text-bg-danger">必填</span>
                       </p>
                     </div>
@@ -611,7 +703,7 @@
                     <!-- 左方區塊 -->
                     <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">職涯規劃</h2>
-                      <p class="text-secondary me-1">
+                      <p class="text-natural-50 me-1">
                         欄位皆為 <span class="badge rounded-pill text-bg-danger">必填</span>
                       </p>
                     </div>
@@ -902,7 +994,7 @@
                     <!-- 左方區塊 -->
                     <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">專業技能區塊</h2>
-                      <p class="text-secondary me-1">欄位皆為選填</p>
+                      <p class="text-natural-50 me-1">欄位皆為選填</p>
                     </div>
                     <!-- 右方區塊 -->
                     <div>
@@ -1056,7 +1148,7 @@
                     <!-- 左方區塊 -->
                     <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">教育背景</h2>
-                      <p class="text-secondary me-1">欄位皆為選填</p>
+                      <p class="text-natural-50 me-1">欄位皆為選填</p>
                     </div>
                     <!-- 右方區塊 -->
                     <div class="flex-grow-1">
@@ -1102,9 +1194,10 @@
       </div>
     </main>
 
-    <nav class="navbar navbar-expand-lg bg-gray border-top py-5">
-  <div class="container">
-    <button
+    <nav class="nav bg-natural-95 border-top py-5">
+  <!-- navbar-expand-lg -->
+  <div class="container d-flex flex-lg-row flex-column align-items-center">
+    <!-- <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -1115,27 +1208,29 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">服務方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-4" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-4" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-4" href="#">隱私權政策</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">用戶條款</a>
-        </li>
-      </ul>
-    </div>
-    <p class="copyright">Copyright © 2025 職旅 workway. All rights reserved.</p>
+    <div class="collapse navbar-collapse" id="navbarNav"> -->
+    <ul class="navbar-nav fs-6 text-black d-flex flex-row flex-wrap">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="index.html">服務方案</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">關於職旅</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">聯絡我們</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav fs-6 text-black d-flex flex-row flex-wrap mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">隱私權政策</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">用戶條款</a>
+      </li>
+    </ul>
+    <p class="fs-7 text-natural-50 mt-2 mt-lg-0 ms-lg-auto">Copyright © 2025 職旅 workway. All rights reserved.</p>
   </div>
+  <!-- </div> -->
 </nav>
 
   </body>
